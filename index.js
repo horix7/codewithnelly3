@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 1000
 
 app.use((request, response, next) => {
 
-  res.setHeader('Access-Control-Allow-Origin', 'https://nellychallenge1.web.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  response.setHeader('Access-Control-Allow-Origin', 'https://nellychallenge1.web.app');
+  response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  response.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   next();
 
 })
