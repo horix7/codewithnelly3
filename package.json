@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node ./index.js",
+    "dev": "nodemon --watch src index.js views --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
     "@babel/preset-env": "^7.14.7",
     "axios": "^0.21.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
   }
 }

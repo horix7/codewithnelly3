@@ -16,7 +16,7 @@ export const getAlbumById = async(request, response) => {
         })
     } catch (error) {
         console.log(error)
-        response.status(500).json({
+        response.status(500).json({ 
             status: false,
             message: "something went wrong"
         })

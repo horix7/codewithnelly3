@@ -5,4 +5,4 @@ const route = express.Router()
 
 route.get("/:id", getAlbumById)
 
-export default route
+export default route 
